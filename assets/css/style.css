@@ -90,3 +90,10 @@ sub { bottom: -.25em; }
   width: 61.5%;
   margin: 0 auto;
 }
+
+/* Common styling */
+.wrapper ul { list-style: none; }
+
+.wrapper a { text-decoration: none; }
+
+body { font-family: Helvetica, sans-serif; }
