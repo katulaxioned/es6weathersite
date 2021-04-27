@@ -1,51 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
- 
-  <meta charset="utf-8">
+    <title>Weather site</title>
 
-  <title>Weather site</title>
-  
-  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <meta name="description" lang="en" content="Weather site has local and international weather forecasts from the most accurate weather forecasting technology featuring up to the minute weather reports.">
-  
-  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <meta name="keywords" lang="en" content="Weather, weather site, today weather, weather app">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+    <meta
+      name="description"
+      lang="en"
+      content="Weather site has local and international weather forecasts from the most accurate weather forecasting technology featuring up to the minute weather reports."
+    />
 
-  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="favicon.ico" />
+    <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+    <meta
+      name="keywords"
+      lang="en"
+      content="Weather, weather site, today weather, weather app"
+    />
 
-  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-  <!-- Font awesome stylesheet. -->
-  <link rel="stylesheet" href="assets/css/css/all.min.css">
+    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="favicon.ico" />
 
-</head>
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
 
-<body>
-  <!-- Container start. -->
-  <div class="container">
-    <!-- Header section starts. -->
-    <header>
-      <div class="wrapper">
-        <h1><a href="index.html" title="Weather site">Weather site</a></h1>
-        <form action="#FIXME">
-          <div class="form-element">
-            <input type="text" name="search" placeholder="Search cities separated by comma">
+    <!-- Font awesome stylesheet. -->
+    <link rel="stylesheet" href="assets/css/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Container start. -->
+    <div class="container">
+      <!-- Header section starts. -->
+      <header>
+        <div class="wrapper">
+          <h1><a href="index.html" title="Weather site">Weather site</a></h1>
+          <form action="#FIXME">
+            <div class="form-element">
+              <input
+                type="text"
+                name="search"
+                placeholder="Search cities separated by comma"
+              />
+            </div>
+          </form>
+        </div>
+      </header>
+      <!-- Header section ends. -->
+      <!-- Main section starts. -->
+      <main>
+        <!-- Weather section start. -->
+        <section class="weather">
+          <div class="wrapper">
+            <div class="result">
+              <div class="one-day-info">
+                <ul class="name-time-info">
+                  <li class="city-name">name</li>
+                  <li class="time">06:20<span class="time-unit">pm</span></li>
+                  <li class="day">tue</li>
+                  <li class="date">Feb 28</li>
+                </ul>
+                <ul class="temp-info">
+                  <li>
+                    <img src="assets/images/icon-1.svg" alt="Weather image" />
+                  </li>
+                  <li>28&deg;</li>
+                </ul>
+              </div>
+              <div class="five-day-info">
+                <ul class="each-day">
+                  <li class="fiveday-day">wed</li>
+                  <li class="fiveday-img">
+                    <img src="assets/images/icon-1.svg" alt="Weather image" />
+                  </li>
+                  <li class="fiveday-temp">29&deg;</li>
+                  <li>humidity</li>
+                  <li class="humidity-result">25&deg;</li>
+                </ul>
+                <ul class="each-day">
+                  <li class="fiveday-day">wed</li>
+                  <li class="fiveday-img">
+                    <img src="assets/images/icon-1.svg" alt="Weather image" />
+                  </li>
+                  <li class="fiveday-temp">29&deg;</li>
+                  <li>humidity</li>
+                  <li class="humidity-result">25&deg;</li>
+                </ul>
+                <ul class="each-day">
+                  <li class="fiveday-day">wed</li>
+                  <li class="fiveday-img">
+                    <img src="assets/images/icon-1.svg" alt="Weather image" />
+                  </li>
+                  <li class="fiveday-temp">29&deg;</li>
+                  <li>humidity</li>
+                  <li class="humidity-result">25&deg;</li>
+                </ul>
+                <ul class="each-day">
+                  <li class="fiveday-day">wed</li>
+                  <li class="fiveday-img">
+                    <img src="assets/images/icon-1.svg" alt="Weather image" />
+                  </li>
+                  <li class="fiveday-temp">29&deg;</li>
+                  <li>humidity</li>
+                  <li class="humidity-result">25&deg;</li>
+                </ul>
+                <ul class="each-day">
+                  <li class="fiveday-day">wed</li>
+                  <li class="fiveday-img">
+                    <img src="assets/images/icon-1.svg" alt="Weather image" />
+                  </li>
+                  <li class="fiveday-temp">29&deg;</li>
+                  <li>humidity</li>
+                  <li class="humidity-result">25&deg;</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </form>
-      </div>
-    </header>
-    <!-- Header section ends. -->
-  </div>
-  <!-- Container ends. -->
+        </section>
+        <!-- Weather section ends. -->
+      </main>
+      <!-- Main section ends. -->
+    </div>
+    <!-- Container ends. -->
 
-<script src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
