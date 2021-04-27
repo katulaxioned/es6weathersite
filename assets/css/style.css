@@ -287,6 +287,9 @@ header form {
 =================================*/
 /*Media query starts*/
 @media only screen and (max-width: 1000px) {
+  /* Removing hover effects. */
+  .form-element:nth-child(2) input:hover{ background-color: cyan; }
+  
   header .wrapper{ flex-direction: column; }
 
   header h1 { margin-bottom: 20px; }
