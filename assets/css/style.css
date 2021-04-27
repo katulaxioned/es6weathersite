@@ -97,3 +97,58 @@ sub { bottom: -.25em; }
 .wrapper a { text-decoration: none; }
 
 body { font-family: Helvetica, sans-serif; }
+
+.container {
+  background-image: url(../images/backroundimg1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*=================================
+  Header styling starts here
+=================================*/
+header .wrapper {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  display: inline-block;
+  color: #e7e7e7;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+header a::first-letter{
+  text-transform: uppercase;
+  color: cyan;
+  font-size: 35px;
+}
+
+header form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-element:first-child input{
+  width: 230px;
+  padding: 5px 0 5px 5px;
+  border: 1px solid cyan;
+  outline: none;
+}
+
+.form-element:nth-child(2) input{ 
+  padding: 5px;
+  margin-left: -1px; 
+  border: 1px solid cyan;
+  border-left: none;
+  background-color: cyan;
+  font-weight: 600;
+  outline: none;
+}
+/*=================================
+  Header styling ends here
+=================================*/
