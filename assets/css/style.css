@@ -99,6 +99,7 @@ sub { bottom: -.25em; }
 body { font-family: Helvetica, sans-serif; }
 
 .container {
+  min-height: 100vh;
   background-image: url(../images/backroundimg1.jpg);
   background-size: cover;
   background-position: center;
@@ -121,26 +122,26 @@ header a {
   font-weight: 600;
 }
 
-header a::first-letter{
+header a::first-letter {
   text-transform: uppercase;
   color: cyan;
   font-size: 35px;
 }
 
-header form{
+header form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form-element:first-child input{
+.form-element:first-child input {
   width: 230px;
   padding: 5px 0 5px 5px;
   border: 1px solid cyan;
   outline: none;
 }
 
-.form-element:nth-child(2) input{ 
+.form-element:nth-child(2) input { 
   padding: 5px;
   margin-left: -1px; 
   border: 1px solid cyan;
@@ -149,6 +150,138 @@ header form{
   font-weight: 600;
   outline: none;
 }
+
+.form-element:nth-child(2) input:hover {
+  background-color: #00b7ff;
+  transition: .5s;
+}
 /*=================================
   Header styling ends here
+=================================*/
+/*=================================
+  Main styling starts here
+=================================*/
+/* Weather styling start. */
+.temp-title {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.one-day-info {
+  height: 200px;
+  position: relative;
+  background-color: #0000001f;
+  color: #fff;
+  flex-basis: 50%;
+}
+
+.one-day-info li { position: absolute; }
+
+.one-day-info li:first-child {
+  top: 20px;
+  left: 25px;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.one-day-info li:nth-child(2) {
+  top: 50px;
+  left: 25px;
+  font-size: 20px;
+}
+
+.one-day-info li:nth-child(2) span {
+  margin-left: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.one-day-info li:nth-child(3) {
+  top: 20px;
+  right: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.one-day-info li:nth-child(4) {
+  top: 50px;
+  right: 30px;
+  color: cyan;
+}
+
+.one-day-info li:nth-child(5) {
+  top: 100px;
+  left: 25px;
+}
+
+.one-day-info li:nth-child(5) img { width: 80px; }
+
+.one-day-info li:nth-child(6) {
+  top: 130px;
+  left: 110px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.five-day-info {
+  display: grid;
+  background-color: #00000070;
+  color: #fff;
+  grid-template-columns: repeat(5, 1fr);
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.each-day{ 
+  padding-top: 21px; 
+  position: relative; 
+}
+
+.each-day li:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.each-day li:nth-child(2) { margin: 10px 0; }
+
+.each-day li:nth-child(2) img { width: 40px; }
+
+.each-day li:nth-child(3) {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.each-day li:nth-child(4) {
+  width: 100%;
+  padding: 10px 0 1px 0;
+  position: absolute;
+  left: 50%;
+  bottom: 27px;
+  background-color: #02904359;
+  font-size: 15px;
+  text-transform: capitalize;
+  transform: translate(-50%,0);
+}
+
+.each-day li:nth-child(5) {
+  width: 100%;
+  padding-bottom: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  background-color: #02904359;
+  font-size: 15px;
+  transform: translate(-50%,0);
+}
+/*=================================
+  Main styling ends here
 =================================*/
