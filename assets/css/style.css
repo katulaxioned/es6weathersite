@@ -285,3 +285,43 @@ header form {
 /*=================================
   Main styling ends here
 =================================*/
+/*Media query starts*/
+@media only screen and (max-width: 1000px) {
+  header .wrapper{ flex-direction: column; }
+
+  header h1 { margin-bottom: 20px; }
+
+  .result { display: block; }
+
+  .five-day-info { height: 190px; }
+}
+
+/* Media query for 500px starts here. */
+@media only screen and (max-width: 500px) {
+  .name-time-info { text-align: center; }
+
+  .one-day-info { height: 220px; }
+
+  .one-day-info li:first-child,.one-day-info li:nth-child(3), .one-day-info li:nth-child(5) img { padding-top: 10px;}
+
+  .one-day-info li { position: static; }
+
+  .each-day li:first-child { font-size: 15px; }
+
+  .each-day li:nth-child(4) { font-size: 10px; }
+}
+
+/* Media query for 330px starts here. */
+@media only screen and (max-width: 330px) {
+  .form-element:first-child input { width: 100px; }
+
+  .five-day-info { height: 155px; }
+
+  .each-day li:first-child { font-size: 12px;}
+
+  .each-day li:nth-child(3) { font-size: 15px; }
+
+  .each-day li:nth-child(4) { font-size: 8px; }
+
+  .each-day li:nth-child(2) img { width: 25px; }
+}
