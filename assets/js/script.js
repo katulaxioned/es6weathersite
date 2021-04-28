@@ -62,8 +62,6 @@ let searchWeather = (e) => {
           const lon = cityResultObj.coord.lon;
           const weatherResult = await promiseForResult(lat,lon);
           const weatherResultObj = JSON.parse(weatherResult)
-          console.log(cityResultObj)
-          console.log(weatherResultObj)
           let html = "";
           const result = document.createElement('div') // Create element to store results.
           result.classList.add("result");
